@@ -4,7 +4,6 @@ using namespace std;
 
 void price(double p, double a, double b, double c, double d, double n){
     double ans, min=-1, max=-1, dec=0.0;
-    vector <double> m;
     for(int i=1; i<=n; i++){
         ans = p*(sin(a*i+b)+cos(c*i+d)+2);
 
@@ -22,7 +21,7 @@ void price(double p, double a, double b, double c, double d, double n){
         if(max-min>dec)
             dec=max-min;
     }
-    dec==0.0?printf("%.2lf\n", dec):printf("%.6lf\n", dec);
+    printf("%.6lf\n", dec);
 
 }
 
